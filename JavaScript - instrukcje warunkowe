@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>doc</title>
+</head>
+<body>
+	<input type="number" name="liczba" />
+	<button>Sprawdz</button>
+	<div class="wynik"></div>
+	<script>
+		const btn = document.querySelector('button');
+		const divw = document.querySelector('div.wynik');
+		btn.addEventListener('click', function () {
+		const lczb = document.querySelector('input[name="liczba"]').value;
+		});
+		if (lczb % 2 == 0) {
+			divw.textContent = 'Podana liczba jest parzysta';
+		} else {
+			divw.textContent = 'Podana liczba jest nieparzysta';
+		}
+		
+		
+	</script>
+</body>
+</html>
