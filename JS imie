@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" name="imie" placeholder="Podaj imie">
+        <button type="submit">Sprawdz</button>
+		<div></div>
+    </form>
+    <script>
+		const input = document.querySelector('input[name="imie"]');
+		const btn = document.querySelector('button');
+		const div = document.querySelector('div');
+		
+		const sprawdzImie = function(e){
+		e.preventDefault();
+			const imie = input.value;
+			const ileZnakow = imie.lenght;
+			if(imie.charAt(ileZnakow - 1) === ('a') || imie.charAt(ileZnakow - 1) === ('A')){
+				div.textContent = 'Podane imie jest zenskie';
+			}
+			else{
+				div.textContent = 'Podane imie jest meskie';
+			}
+		}
+		btn.addEventListener('click', sprawdzImie);
+	</script>
+</body>
+</html>
