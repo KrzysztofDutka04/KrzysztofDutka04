@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+	<script>
+		var promien = prompt('podaj promien okregu: ');
+		var pole = Math.PI * promien * promien;
+		var obwod = 2 * Math.PI * promien;
+		document.write('Podany promien wynosi: ' + promien + '<br>');
+		document.write('Pole wynosi: ' + pole + '<br>') ;
+		document.write('Obwod wynosi: ' + obwod + '<br>');
+		
+	</script>
+</body>
