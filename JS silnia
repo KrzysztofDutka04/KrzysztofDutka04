@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>doc</title>
+</head>
+<body>
+	<input type="number" name="liczba" />
+	<button >Oblicz silnie</button>
+	<div class="wynik"></div>
+	<script>
+		const poleLiczbowe = document.querySelector('input[name="liczba"]');
+		const btn = document.querySelector('button');
+		const divW = document.querySelector('div.wynik');
+		btn.addEventListener('click', function(){
+			const liczbaZInputa = poleLiczbowe.value * 1;
+			let silnia = 0;
+			if (liczbaZInputa === 1) {divW.textContent = 'Silnia liczby 1 wynosi: 1'}
+			else if (liczbaZInputa > 1) { for (let i = 1; i<= liczbaZInputa; i++
+		})
+	</script>
+</body>
