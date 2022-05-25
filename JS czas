@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	
+</head>
+<body>
+	<div></div>
+	<script>
+		const div = document.querySelector('div');
+		
+		function zegarek(){
+			const data = new Date();
+			const godz = data.getHours();
+			const min = data.getMinutes();
+			const sek = data.getSeconds();
+			div.textContent = `${godz} / ${min} / ${sek}`;
+		}
+		zegarek();
+		setInterval(zegarek, 1000);
+	</script>
+</body>
+</html>
